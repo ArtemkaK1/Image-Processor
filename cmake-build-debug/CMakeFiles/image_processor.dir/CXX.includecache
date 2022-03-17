@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/artemiy/CLionProjects/image_processor/file_manager/file_manager.cpp
+file_manager.h
+/Users/artemiy/CLionProjects/image_processor/file_manager/file_manager.h
+
+/Users/artemiy/CLionProjects/image_processor/file_manager/file_manager.h
+fstream
+-
+vector
+-
+
