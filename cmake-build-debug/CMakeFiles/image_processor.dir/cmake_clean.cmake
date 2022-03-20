@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.o"
+  "CMakeFiles/image_processor.dir/image.cpp.o"
   "CMakeFiles/image_processor.dir/image_processor.cpp.o"
   "image_processor"
   "image_processor.pdb"

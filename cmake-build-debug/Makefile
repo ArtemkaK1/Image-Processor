@@ -129,29 +129,29 @@ image_processor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/build
 .PHONY : image_processor/fast
 
-file_manager/file_manager.o: file_manager/file_manager.cpp.o
-.PHONY : file_manager/file_manager.o
+image.o: image.cpp.o
+.PHONY : image.o
 
 # target to build an object file
-file_manager/file_manager.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.o
-.PHONY : file_manager/file_manager.cpp.o
+image.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/image.cpp.o
+.PHONY : image.cpp.o
 
-file_manager/file_manager.i: file_manager/file_manager.cpp.i
-.PHONY : file_manager/file_manager.i
+image.i: image.cpp.i
+.PHONY : image.i
 
 # target to preprocess a source file
-file_manager/file_manager.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.i
-.PHONY : file_manager/file_manager.cpp.i
+image.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/image.cpp.i
+.PHONY : image.cpp.i
 
-file_manager/file_manager.s: file_manager/file_manager.cpp.s
-.PHONY : file_manager/file_manager.s
+image.s: image.cpp.s
+.PHONY : image.s
 
 # target to generate assembly for a file
-file_manager/file_manager.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.s
-.PHONY : file_manager/file_manager.cpp.s
+image.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/image.cpp.s
+.PHONY : image.cpp.s
 
 image_processor.o: image_processor.cpp.o
 .PHONY : image_processor.o
@@ -186,9 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... image_processor"
-	@echo "... file_manager/file_manager.o"
-	@echo "... file_manager/file_manager.i"
-	@echo "... file_manager/file_manager.s"
+	@echo "... image.o"
+	@echo "... image.i"
+	@echo "... image.s"
 	@echo "... image_processor.o"
 	@echo "... image_processor.i"
 	@echo "... image_processor.s"

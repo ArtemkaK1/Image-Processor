@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/artemiy/CLionProjects/image_processor/file_manager/file_manager.cpp
-file_manager.h
-/Users/artemiy/CLionProjects/image_processor/file_manager/file_manager.h
-
-/Users/artemiy/CLionProjects/image_processor/file_manager/file_manager.h
-fstream
--
+/Users/artemiy/CLionProjects/image_processor/image.h
 vector
+-
+
+/Users/artemiy/CLionProjects/image_processor/image_processor.cpp
+image.h
+/Users/artemiy/CLionProjects/image_processor/image.h
+iostream
 -
 

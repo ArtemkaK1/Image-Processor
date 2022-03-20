@@ -80,10 +80,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/artemiy/CLionProjects/image_processor/file_manager/file_manager.cpp">
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/image.cpp">
 			<Option target="image_processor"/>
 		</Unit>
-		<Unit filename="/Users/artemiy/CLionProjects/image_processor/file_manager/file_manager.h">
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/image.h">
 			<Option target="image_processor"/>
 		</Unit>
 		<Unit filename="/Users/artemiy/CLionProjects/image_processor/image_processor.cpp">

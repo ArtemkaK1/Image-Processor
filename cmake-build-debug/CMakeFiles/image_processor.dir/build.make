@@ -79,29 +79,29 @@ CMakeFiles/image_processor.dir/image_processor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/image_processor.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/image_processor.cpp -o CMakeFiles/image_processor.dir/image_processor.cpp.s
 
-CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.o: CMakeFiles/image_processor.dir/flags.make
-CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.o: ../file_manager/file_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.o -c /Users/artemiy/CLionProjects/image_processor/file_manager/file_manager.cpp
+CMakeFiles/image_processor.dir/image.cpp.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/image.cpp.o: ../image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/image_processor.dir/image.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/image.cpp.o -c /Users/artemiy/CLionProjects/image_processor/image.cpp
 
-CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemiy/CLionProjects/image_processor/file_manager/file_manager.cpp > CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.i
+CMakeFiles/image_processor.dir/image.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/image.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemiy/CLionProjects/image_processor/image.cpp > CMakeFiles/image_processor.dir/image.cpp.i
 
-CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/file_manager/file_manager.cpp -o CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.s
+CMakeFiles/image_processor.dir/image.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/image.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/image.cpp -o CMakeFiles/image_processor.dir/image.cpp.s
 
 # Object files for target image_processor
 image_processor_OBJECTS = \
 "CMakeFiles/image_processor.dir/image_processor.cpp.o" \
-"CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.o"
+"CMakeFiles/image_processor.dir/image.cpp.o"
 
 # External object files for target image_processor
 image_processor_EXTERNAL_OBJECTS =
 
 image_processor: CMakeFiles/image_processor.dir/image_processor.cpp.o
-image_processor: CMakeFiles/image_processor.dir/file_manager/file_manager.cpp.o
+image_processor: CMakeFiles/image_processor.dir/image.cpp.o
 image_processor: CMakeFiles/image_processor.dir/build.make
 image_processor: CMakeFiles/image_processor.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable image_processor"
