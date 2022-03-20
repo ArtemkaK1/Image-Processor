@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters.cpp">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters.h">
+			<Option target="image_processor"/>
+		</Unit>
 		<Unit filename="/Users/artemiy/CLionProjects/image_processor/image.cpp">
 			<Option target="image_processor"/>
 		</Unit>

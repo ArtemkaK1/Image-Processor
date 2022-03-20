@@ -31,7 +31,7 @@ void Image::read(const char *path) {
     f.open(path, std::ios::in | std::ios::binary);
 
     if (!f.is_open()) {
-        std::cout << "File cannot be opened";
+        std::cout << "File cannot be opened" << std::endl;
         return;
     }
 
@@ -42,7 +42,7 @@ void Image::read(const char *path) {
     f.read(reinterpret_cast<char*>(informationHeader), informationHeaderSize);
 
     if (fileHeader[0] != 'B' || fileHeader[1] != 'M') {
-        std::cout << "Not BMP image";
+        std::cout << "Not BMP image" << std::endl;
         f.close();
         return;
     }
@@ -68,7 +68,7 @@ void Image::read(const char *path) {
     }
     f.close();
 
-    std::cout << "File can be read";
+    std::cout << "File can be read" << std::endl;
 }
 
 void Image::Export(const char *path) const {
@@ -76,7 +76,7 @@ void Image::Export(const char *path) const {
     f.open(path, std::ios::out | std::ios::binary);
 
     if (!f.is_open()) {
-        std::cout << "File cannot be opened";
+        std::cout << "File cannot be opened" << std::endl;
         return;
     }
 
@@ -159,5 +159,5 @@ void Image::Export(const char *path) const {
 
     f.close();
 
-    std::cout << "File created";
+    std::cout << "File created" << std::endl;
 }

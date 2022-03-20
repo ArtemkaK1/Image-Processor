@@ -129,6 +129,30 @@ image_processor/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/build
 .PHONY : image_processor/fast
 
+filters.o: filters.cpp.o
+.PHONY : filters.o
+
+# target to build an object file
+filters.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters.cpp.o
+.PHONY : filters.cpp.o
+
+filters.i: filters.cpp.i
+.PHONY : filters.i
+
+# target to preprocess a source file
+filters.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters.cpp.i
+.PHONY : filters.cpp.i
+
+filters.s: filters.cpp.s
+.PHONY : filters.s
+
+# target to generate assembly for a file
+filters.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters.cpp.s
+.PHONY : filters.cpp.s
+
 image.o: image.cpp.o
 .PHONY : image.o
 
@@ -186,6 +210,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... image_processor"
+	@echo "... filters.o"
+	@echo "... filters.i"
+	@echo "... filters.s"
 	@echo "... image.o"
 	@echo "... image.i"
 	@echo "... image.s"
