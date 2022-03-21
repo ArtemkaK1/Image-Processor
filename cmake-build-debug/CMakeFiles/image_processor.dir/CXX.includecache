@@ -6,13 +6,39 @@
 
 #IncludeRegexTransform: 
 
+/Users/artemiy/CLionProjects/image_processor/filter_construction.h
+string
+-
+vector
+-
+
+/Users/artemiy/CLionProjects/image_processor/filters.h
+filter_construction.h
+/Users/artemiy/CLionProjects/image_processor/filter_construction.h
+image.h
+/Users/artemiy/CLionProjects/image_processor/image.h
+
 /Users/artemiy/CLionProjects/image_processor/image.h
 vector
 -
 
 /Users/artemiy/CLionProjects/image_processor/image_processor.cpp
+filters.h
+/Users/artemiy/CLionProjects/image_processor/filters.h
 image.h
 /Users/artemiy/CLionProjects/image_processor/image.h
+parser.h
+/Users/artemiy/CLionProjects/image_processor/parser.h
 iostream
+-
+
+/Users/artemiy/CLionProjects/image_processor/parser.h
+filter_construction.h
+/Users/artemiy/CLionProjects/image_processor/filter_construction.h
+iostream
+-
+string_view
+-
+vector
 -
 

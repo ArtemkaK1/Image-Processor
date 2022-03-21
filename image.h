@@ -16,7 +16,11 @@ public:
     ~Image();
 
     Color getColor(int x, int y) const;
+    Color& getColor(int x, int y);
     void setColor(const Color&, int x, int y);
+
+    int getWidth() const;
+    int getHeight() const;
 
     void read(const char* path);
 

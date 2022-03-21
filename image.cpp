@@ -20,10 +20,22 @@ Color Image::getColor(int x, int y) const {
     return colors_[y * width_ + x];
 }
 
+Color& Image::getColor(int x, int y) {
+    return colors_[y * width_ + x];
+}
+
 void Image::setColor(const Color& color, int x, int y) {
     colors_[y * width_ + x].r = color.r;
     colors_[y * width_ + x].g = color.g;
     colors_[y * width_ + x].b = color.b;
+}
+
+int Image::getWidth() const {
+    return width_;
+}
+
+int Image::getHeight() const {
+    return height_;
 }
 
 void Image::read(const char *path) {
@@ -35,10 +47,10 @@ void Image::read(const char *path) {
         return;
     }
 
-    unsigned char fileHeader[fileHeaderSize];
+    uint8_t fileHeader[fileHeaderSize];
     f.read(reinterpret_cast<char*>(fileHeader), fileHeaderSize);
 
-    unsigned char informationHeader[informationHeaderSize];
+    uint8_t informationHeader[informationHeaderSize];
     f.read(reinterpret_cast<char*>(informationHeader), informationHeaderSize);
 
     if (fileHeader[0] != 'B' || fileHeader[1] != 'M') {
@@ -57,7 +69,7 @@ void Image::read(const char *path) {
 
     for (int y = 0; y < height_; ++y) {
         for (int x = 0; x < width_; ++x) {
-            unsigned char color[3];
+            uint8_t color[3];
             f.read(reinterpret_cast<char*>(color), 3);
 
             colors_[y * width_ + x].r = static_cast<float>(color[2]) / 255.0f;
@@ -80,12 +92,12 @@ void Image::Export(const char *path) const {
         return;
     }
 
-    unsigned char bmpPad[3] = {0, 0, 0};
+    uint8_t bmpPad[3] = {0, 0, 0};
     const int paddingAmount = ((4 - (width_ * 3) % 4) % 4);
 
     const int fileSize = fileHeaderSize + informationHeaderSize + width_ * height_ * 3 + paddingAmount * height_;
 
-    unsigned char fileHeader[fileHeaderSize];
+    uint8_t fileHeader[fileHeaderSize];
 
     // Тип файла
     fileHeader[0] = 'B';
@@ -109,7 +121,7 @@ void Image::Export(const char *path) const {
     fileHeader[12] = 0;
     fileHeader[13] = 0;
 
-    unsigned char informationHeader[informationHeaderSize];
+    uint8_t informationHeader[informationHeaderSize];
 
     // Размер хедера
     informationHeader[0] = informationHeaderSize;
@@ -146,11 +158,11 @@ void Image::Export(const char *path) const {
 
     for (int y = 0; y < height_; ++y) {
         for (int x = 0; x < width_; ++x) {
-            unsigned char r = static_cast<unsigned char>(getColor(x, y).r * 255.0f);
-            unsigned char g = static_cast<unsigned char>(getColor(x, y).g * 255.0f);
-            unsigned char b = static_cast<unsigned char>(getColor(x, y).b * 255.0f);
+            uint8_t r = static_cast<uint8_t>(getColor(x, y).r * 255.0f);
+            uint8_t g = static_cast<uint8_t>(getColor(x, y).g * 255.0f);
+            uint8_t b = static_cast<uint8_t>(getColor(x, y).b * 255.0f);
 
-            unsigned char color[] = {b, g, r};
+            uint8_t color[] = {b, g, r};
 
             f.write(reinterpret_cast<char*>(color), 3);
         }
