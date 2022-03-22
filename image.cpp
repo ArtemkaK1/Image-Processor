@@ -1,40 +1,29 @@
 #include "image.h"
 
-#include <iostream>
 #include <fstream>
+#include <iostream>
 
-const int fileHeaderSize = 14;
-const int informationHeaderSize = 40;
 
-Color::Color() : r(0), g(0), b(0) {}
-
-Color::Color(float r, float g, float b) : r(r), g(g), b(b) {}
-
-Color::~Color() {}
+namespace {
+    const int FILE_HEADER_SIZE = 14;
+    const int INFORMATION_HEADER_SIZE = 40;
+}
 
 Image::Image(int width, int height) :  width_(width), height_(height), colors_(std::vector<Color>(width * height)) {}
 
-Image::~Image() {}
-
-Color Image::getColor(int x, int y) const {
+Color Image::GetColor(int x, int y) const {
     return colors_[y * width_ + x];
 }
 
-Color& Image::getColor(int x, int y) {
+Color& Image::GetColor(int x, int y) {
     return colors_[y * width_ + x];
 }
 
-void Image::setColor(const Color& color, int x, int y) {
-    colors_[y * width_ + x].r = color.r;
-    colors_[y * width_ + x].g = color.g;
-    colors_[y * width_ + x].b = color.b;
-}
-
-int Image::getWidth() const {
+int Image::GetWidth() const {
     return width_;
 }
 
-int Image::getHeight() const {
+int Image::GetHeight() const {
     return height_;
 }
 
@@ -47,22 +36,22 @@ void Image::read(const char *path) {
         return;
     }
 
-    uint8_t fileHeader[fileHeaderSize];
-    f.read(reinterpret_cast<char*>(fileHeader), fileHeaderSize);
+    uint8_t file_header[FILE_HEADER_SIZE];
+    f.read(reinterpret_cast<char*>(file_header), FILE_HEADER_SIZE);
 
-    uint8_t informationHeader[informationHeaderSize];
-    f.read(reinterpret_cast<char*>(informationHeader), informationHeaderSize);
+    uint8_t information_header[INFORMATION_HEADER_SIZE];
+    f.read(reinterpret_cast<char*>(information_header), INFORMATION_HEADER_SIZE);
 
-    if (fileHeader[0] != 'B' || fileHeader[1] != 'M') {
+    if (file_header[0] != 'B' || file_header[1] != 'M') {
         std::cout << "Not BMP image" << std::endl;
         f.close();
         return;
     }
 
-    int fileSize = fileHeader[2] + (fileHeader[3] << 8) + (fileHeader[4] << 16) + (fileHeader[5] << 24);
+    int file_size = file_header[2] + (file_header[3] << 8) + (file_header[4] << 16) + (file_header[5] << 24);
 
-    width_ = informationHeader[4] + (informationHeader[5] << 8) + (informationHeader[6] << 16) + (informationHeader[7] << 24);
-    height_ = informationHeader[8] + (informationHeader[9] << 8) + (informationHeader[10] << 16) + (informationHeader[11] << 24);
+    width_ = information_header[4] + (information_header[5] << 8) + (information_header[6] << 16) + (information_header[7] << 24);
+    height_ = information_header[8] + (information_header[9] << 8) + (information_header[10] << 16) + (information_header[11] << 24);
 
     colors_.resize(width_ * height_);
     const int paddingAmount = ((4 - (width_ * 3) % 4) % 4);
@@ -92,81 +81,81 @@ void Image::Export(const char *path) const {
         return;
     }
 
-    uint8_t bmpPad[3] = {0, 0, 0};
-    const int paddingAmount = ((4 - (width_ * 3) % 4) % 4);
+    uint8_t bmp_pad[3] = {0, 0, 0};
+    const int padding_amount = ((4 - (width_ * 3) % 4) % 4);
 
-    const int fileSize = fileHeaderSize + informationHeaderSize + width_ * height_ * 3 + paddingAmount * height_;
+    const int file_size = FILE_HEADER_SIZE + INFORMATION_HEADER_SIZE + width_ * height_ * 3 + padding_amount * height_;
 
-    uint8_t fileHeader[fileHeaderSize];
+    uint8_t file_header[FILE_HEADER_SIZE];
 
     // Тип файла
-    fileHeader[0] = 'B';
-    fileHeader[1] = 'M';
+    file_header[0] = 'B';
+    file_header[1] = 'M';
 
     // Размер файла
-    fileHeader[2] = fileSize;
-    fileHeader[3] = fileSize >> 8;
-    fileHeader[4] = fileSize >> 16;
-    fileHeader[5] = fileSize >> 24;
+    file_header[2] = file_size;
+    file_header[3] = file_size >> 8;
+    file_header[4] = file_size >> 16;
+    file_header[5] = file_size >> 24;
 
     // Резерв
-    fileHeader[6] = 0;
-    fileHeader[7] = 0;
-    fileHeader[8] = 0;
-    fileHeader[9] = 0;
+    file_header[6] = 0;
+    file_header[7] = 0;
+    file_header[8] = 0;
+    file_header[9] = 0;
 
     //Отступ для данных пикселей
-    fileHeader[10] = fileHeaderSize + informationHeaderSize;
-    fileHeader[11] = 0;
-    fileHeader[12] = 0;
-    fileHeader[13] = 0;
+    file_header[10] = FILE_HEADER_SIZE + INFORMATION_HEADER_SIZE;
+    file_header[11] = 0;
+    file_header[12] = 0;
+    file_header[13] = 0;
 
-    uint8_t informationHeader[informationHeaderSize];
+    uint8_t information_header[INFORMATION_HEADER_SIZE];
 
     // Размер хедера
-    informationHeader[0] = informationHeaderSize;
-    informationHeader[1] = 0;
-    informationHeader[2] = 0;
-    informationHeader[3] = 0;
+    information_header[0] = INFORMATION_HEADER_SIZE;
+    information_header[1] = 0;
+    information_header[2] = 0;
+    information_header[3] = 0;
 
     // Ширина
-    informationHeader[4] = width_;
-    informationHeader[5] = width_ >> 8;
-    informationHeader[6] = width_ >> 16;
-    informationHeader[7] = width_ >> 24;
+    information_header[4] = width_;
+    information_header[5] = width_ >> 8;
+    information_header[6] = width_ >> 16;
+    information_header[7] = width_ >> 24;
 
     // Высота
-    informationHeader[8] = height_;
-    informationHeader[9] = height_ >> 8;
-    informationHeader[10] = height_ >> 16;
-    informationHeader[11] = height_ >> 24;
+    information_header[8] = height_;
+    information_header[9] = height_ >> 8;
+    information_header[10] = height_ >> 16;
+    information_header[11] = height_ >> 24;
 
-    informationHeader[12] = 1;
-    informationHeader[13] = 0;
+    information_header[12] = 1;
+    information_header[13] = 0;
 
     // Число бит на пиксель
-    informationHeader[14] = 24;
-    informationHeader[15] = 0;
+    information_header[14] = 24;
+    information_header[15] = 0;
 
     // Не используем
     for (size_t i = 16; i < 40; ++i) {
-        informationHeader[i] = 0;
+        information_header[i] = 0;
     }
 
-    f.write(reinterpret_cast<char*>(fileHeader), fileHeaderSize);
-    f.write(reinterpret_cast<char*>(informationHeader), informationHeaderSize);
+    f.write(reinterpret_cast<char*>(file_header), FILE_HEADER_SIZE);
+    f.write(reinterpret_cast<char*>(information_header), INFORMATION_HEADER_SIZE);
 
     for (int y = 0; y < height_; ++y) {
         for (int x = 0; x < width_; ++x) {
-            uint8_t r = static_cast<uint8_t>(getColor(x, y).r * 255.0f);
-            uint8_t g = static_cast<uint8_t>(getColor(x, y).g * 255.0f);
-            uint8_t b = static_cast<uint8_t>(getColor(x, y).b * 255.0f);
+            uint8_t r = static_cast<uint8_t>(GetColor(x, y).r * 255.0f);
+            uint8_t g = static_cast<uint8_t>(GetColor(x, y).g * 255.0f);
+            uint8_t b = static_cast<uint8_t>(GetColor(x, y).b * 255.0f);
 
             uint8_t color[] = {b, g, r};
 
             f.write(reinterpret_cast<char*>(color), 3);
         }
-        f.write(reinterpret_cast<char*>(bmpPad), paddingAmount);
+        f.write(reinterpret_cast<char*>(bmp_pad), padding_amount);
     }
 
     f.close();

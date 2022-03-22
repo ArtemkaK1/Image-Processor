@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/Users/artemiy/CLionProjects/image_processor/color.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/color.cpp.o"
   "/Users/artemiy/CLionProjects/image_processor/filters.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/filters.cpp.o"
   "/Users/artemiy/CLionProjects/image_processor/image.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/image.cpp.o"
   "/Users/artemiy/CLionProjects/image_processor/image_processor.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/image_processor.cpp.o"
