@@ -14,21 +14,19 @@ string
 vector
 -
 
+/Users/artemiy/CLionProjects/image_processor/filters/crop.cpp
+crop.h
+/Users/artemiy/CLionProjects/image_processor/filters/crop.h
+
+/Users/artemiy/CLionProjects/image_processor/filters/crop.h
+filter_protocol.h
+/Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
+
 /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
 ../filter_construction.h
 /Users/artemiy/CLionProjects/image_processor/filter_construction.h
 ../image.h
 /Users/artemiy/CLionProjects/image_processor/image.h
-
-/Users/artemiy/CLionProjects/image_processor/filters/gauss.cpp
-gauss.h
-/Users/artemiy/CLionProjects/image_processor/filters/gauss.h
-cmath
--
-
-/Users/artemiy/CLionProjects/image_processor/filters/gauss.h
-filter_protocol.h
-/Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
 
 /Users/artemiy/CLionProjects/image_processor/image.h
 color.h
