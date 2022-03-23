@@ -17,13 +17,13 @@ Image EdgeDetection::Apply(Image &image, std::vector<std::string> params) {
             }
             new_color += 4 * static_cast<int>(image.GetColor(x, y).r);
             if (new_color > threshold) {
-                result.GetColor(x, y).r = 255.0f;
-                result.GetColor(x, y).g = 255.0f;
-                result.GetColor(x, y).b = 255.0f;
+                result.GetColor(x, y).r = 255;
+                result.GetColor(x, y).g = 255;
+                result.GetColor(x, y).b = 255;
             } else {
-                result.GetColor(x, y).r = 0.0f;
-                result.GetColor(x, y).g = 0.0f;
-                result.GetColor(x, y).b = 0.0f;
+                result.GetColor(x, y).r = 0;
+                result.GetColor(x, y).g = 0;
+                result.GetColor(x, y).b = 0;
             }
         }
     }

@@ -20,13 +20,13 @@ vector
 ../image.h
 /Users/artemiy/CLionProjects/image_processor/image.h
 
-/Users/artemiy/CLionProjects/image_processor/filters/sharp.cpp
-sharp.h
-/Users/artemiy/CLionProjects/image_processor/filters/sharp.h
-iostream
+/Users/artemiy/CLionProjects/image_processor/filters/gauss.cpp
+gauss.h
+/Users/artemiy/CLionProjects/image_processor/filters/gauss.h
+cmath
 -
 
-/Users/artemiy/CLionProjects/image_processor/filters/sharp.h
+/Users/artemiy/CLionProjects/image_processor/filters/gauss.h
 filter_protocol.h
 /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
 

@@ -20,7 +20,12 @@ CMakeFiles/image_processor.dir/filters/edge.cpp.o: \
  ../filters/grayscale.h \
  ../image.h
 CMakeFiles/image_processor.dir/filters/gauss.cpp.o: \
- ../filters/gauss.cpp
+ ../color.h \
+ ../filter_construction.h \
+ ../filters/filter_protocol.h \
+ ../filters/gauss.cpp \
+ ../filters/gauss.h \
+ ../image.h
 CMakeFiles/image_processor.dir/filters/grayscale.cpp.o: \
  ../color.h \
  ../filter_construction.h \

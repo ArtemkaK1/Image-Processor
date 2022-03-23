@@ -20,7 +20,12 @@ CMakeFiles/image_processor.dir/filters/edge.cpp.o
  /Users/artemiy/CLionProjects/image_processor/filters/grayscale.h
  /Users/artemiy/CLionProjects/image_processor/image.h
 CMakeFiles/image_processor.dir/filters/gauss.cpp.o
+ /Users/artemiy/CLionProjects/image_processor/color.h
+ /Users/artemiy/CLionProjects/image_processor/filter_construction.h
+ /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
  /Users/artemiy/CLionProjects/image_processor/filters/gauss.cpp
+ /Users/artemiy/CLionProjects/image_processor/filters/gauss.h
+ /Users/artemiy/CLionProjects/image_processor/image.h
 CMakeFiles/image_processor.dir/filters/grayscale.cpp.o
  /Users/artemiy/CLionProjects/image_processor/color.h
  /Users/artemiy/CLionProjects/image_processor/filter_construction.h

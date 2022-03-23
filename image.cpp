@@ -61,9 +61,9 @@ void Image::read(const char *path) {
             uint8_t color[3];
             f.read(reinterpret_cast<char*>(color), 3);
 
-            colors_[y * width_ + x].r = static_cast<float>(color[2]) / 255.0f;
-            colors_[y * width_ + x].g = static_cast<float>(color[1]) / 255.0f;
-            colors_[y * width_ + x].b = static_cast<float>(color[0]) / 255.0f;
+            colors_[y * width_ + x].r = static_cast<int>(color[2]);
+            colors_[y * width_ + x].g = static_cast<int>(color[1]);
+            colors_[y * width_ + x].b = static_cast<int>(color[0]);
         }
         f.ignore(padding_amount);
     }
@@ -147,9 +147,9 @@ void Image::Export(const char *path) const {
 
     for (int y = 0; y < height_; ++y) {
         for (int x = 0; x < width_; ++x) {
-            uint8_t r = static_cast<uint8_t>(GetColor(x, y).r * 255.0f);
-            uint8_t g = static_cast<uint8_t>(GetColor(x, y).g * 255.0f);
-            uint8_t b = static_cast<uint8_t>(GetColor(x, y).b * 255.0f);
+            uint8_t r = static_cast<uint8_t>(GetColor(x, y).r);
+            uint8_t g = static_cast<uint8_t>(GetColor(x, y).g);
+            uint8_t b = static_cast<uint8_t>(GetColor(x, y).b);
 
             uint8_t color[] = {b, g, r};
 

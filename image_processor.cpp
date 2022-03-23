@@ -18,6 +18,7 @@ int main(int argc, char** argv) {
     Image image3(0, 0);
     Image image4(0, 0);
     Image image5(0, 0);
+    Image image6(0, 0);
 
     GrayscaleFilter grayscaleFilter;
     image1.read("/Users/artemiy/CLionProjects/image_processor/examples/example.bmp");
@@ -43,6 +44,11 @@ int main(int argc, char** argv) {
     image5.read("/Users/artemiy/CLionProjects/image_processor/examples/example.bmp");
     image5 = edgeDetection.Apply(image5, {"4"});
     image5.Export("/Users/artemiy/CLionProjects/image_processor/examples/copy5.bmp");
+
+    GaussBlur gaussBlur;
+    image6.read("/Users/artemiy/CLionProjects/image_processor/examples/example.bmp");
+    gaussBlur.Apply(image6, {"5"});
+    image6.Export("/Users/artemiy/CLionProjects/image_processor/examples/copy6.bmp");
     return 0;
 }
 
