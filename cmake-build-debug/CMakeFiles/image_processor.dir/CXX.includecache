@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/artemiy/CLionProjects/image_processor/color.cpp
-color.h
-/Users/artemiy/CLionProjects/image_processor/color.h
-
 /Users/artemiy/CLionProjects/image_processor/color.h
 
 /Users/artemiy/CLionProjects/image_processor/filter_construction.h
@@ -18,47 +14,25 @@ string
 vector
 -
 
-/Users/artemiy/CLionProjects/image_processor/filters.cpp
-filters.h
-/Users/artemiy/CLionProjects/image_processor/filters.h
-
-/Users/artemiy/CLionProjects/image_processor/filters.h
-filter_construction.h
+/Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
+../filter_construction.h
 /Users/artemiy/CLionProjects/image_processor/filter_construction.h
-image.h
+../image.h
 /Users/artemiy/CLionProjects/image_processor/image.h
 
-/Users/artemiy/CLionProjects/image_processor/image.cpp
-image.h
+/Users/artemiy/CLionProjects/image_processor/filters/sharp.cpp
+sharp.h
+/Users/artemiy/CLionProjects/image_processor/filters/sharp.h
+iostream
+-
+
+/Users/artemiy/CLionProjects/image_processor/filters/sharp.h
+filter_protocol.h
+/Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
+
 /Users/artemiy/CLionProjects/image_processor/image.h
 color.h
 /Users/artemiy/CLionProjects/image_processor/color.h
-fstream
--
-iostream
--
-
-/Users/artemiy/CLionProjects/image_processor/image.h
-vector
--
-
-/Users/artemiy/CLionProjects/image_processor/image_processor.cpp
-filters.h
-/Users/artemiy/CLionProjects/image_processor/filters.h
-image.h
-/Users/artemiy/CLionProjects/image_processor/image.h
-parser.h
-/Users/artemiy/CLionProjects/image_processor/parser.h
-iostream
--
-
-/Users/artemiy/CLionProjects/image_processor/parser.h
-filter_construction.h
-/Users/artemiy/CLionProjects/image_processor/filter_construction.h
-iostream
--
-string_view
--
 vector
 -
 

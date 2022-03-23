@@ -1,4 +1,9 @@
-#include "filters.h"
+#include "filters/edge.h"
+#include "filters/crop.h"
+#include "filters/gauss.h"
+#include "filters/grayscale.h"
+#include "filters/negative.h"
+#include "filters/sharp.h"
 #include "image.h"
 #include "parser.h"
 

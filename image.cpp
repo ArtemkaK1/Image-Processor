@@ -54,7 +54,7 @@ void Image::read(const char *path) {
     height_ = information_header[8] + (information_header[9] << 8) + (information_header[10] << 16) + (information_header[11] << 24);
 
     colors_.resize(width_ * height_);
-    const int paddingAmount = ((4 - (width_ * 3) % 4) % 4);
+    const int padding_amount = ((4 - (width_ * 3) % 4) % 4);
 
     for (int y = 0; y < height_; ++y) {
         for (int x = 0; x < width_; ++x) {
@@ -65,7 +65,7 @@ void Image::read(const char *path) {
             colors_[y * width_ + x].g = static_cast<float>(color[1]) / 255.0f;
             colors_[y * width_ + x].b = static_cast<float>(color[0]) / 255.0f;
         }
-        f.ignore(paddingAmount);
+        f.ignore(padding_amount);
     }
     f.close();
 

@@ -153,29 +153,149 @@ color.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/color.cpp.s
 .PHONY : color.cpp.s
 
-filters.o: filters.cpp.o
-.PHONY : filters.o
+filters/crop.o: filters/crop.cpp.o
+.PHONY : filters/crop.o
 
 # target to build an object file
-filters.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters.cpp.o
-.PHONY : filters.cpp.o
+filters/crop.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/crop.cpp.o
+.PHONY : filters/crop.cpp.o
 
-filters.i: filters.cpp.i
-.PHONY : filters.i
+filters/crop.i: filters/crop.cpp.i
+.PHONY : filters/crop.i
 
 # target to preprocess a source file
-filters.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters.cpp.i
-.PHONY : filters.cpp.i
+filters/crop.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/crop.cpp.i
+.PHONY : filters/crop.cpp.i
 
-filters.s: filters.cpp.s
-.PHONY : filters.s
+filters/crop.s: filters/crop.cpp.s
+.PHONY : filters/crop.s
 
 # target to generate assembly for a file
-filters.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters.cpp.s
-.PHONY : filters.cpp.s
+filters/crop.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/crop.cpp.s
+.PHONY : filters/crop.cpp.s
+
+filters/edge.o: filters/edge.cpp.o
+.PHONY : filters/edge.o
+
+# target to build an object file
+filters/edge.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/edge.cpp.o
+.PHONY : filters/edge.cpp.o
+
+filters/edge.i: filters/edge.cpp.i
+.PHONY : filters/edge.i
+
+# target to preprocess a source file
+filters/edge.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/edge.cpp.i
+.PHONY : filters/edge.cpp.i
+
+filters/edge.s: filters/edge.cpp.s
+.PHONY : filters/edge.s
+
+# target to generate assembly for a file
+filters/edge.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/edge.cpp.s
+.PHONY : filters/edge.cpp.s
+
+filters/gauss.o: filters/gauss.cpp.o
+.PHONY : filters/gauss.o
+
+# target to build an object file
+filters/gauss.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/gauss.cpp.o
+.PHONY : filters/gauss.cpp.o
+
+filters/gauss.i: filters/gauss.cpp.i
+.PHONY : filters/gauss.i
+
+# target to preprocess a source file
+filters/gauss.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/gauss.cpp.i
+.PHONY : filters/gauss.cpp.i
+
+filters/gauss.s: filters/gauss.cpp.s
+.PHONY : filters/gauss.s
+
+# target to generate assembly for a file
+filters/gauss.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/gauss.cpp.s
+.PHONY : filters/gauss.cpp.s
+
+filters/grayscale.o: filters/grayscale.cpp.o
+.PHONY : filters/grayscale.o
+
+# target to build an object file
+filters/grayscale.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/grayscale.cpp.o
+.PHONY : filters/grayscale.cpp.o
+
+filters/grayscale.i: filters/grayscale.cpp.i
+.PHONY : filters/grayscale.i
+
+# target to preprocess a source file
+filters/grayscale.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/grayscale.cpp.i
+.PHONY : filters/grayscale.cpp.i
+
+filters/grayscale.s: filters/grayscale.cpp.s
+.PHONY : filters/grayscale.s
+
+# target to generate assembly for a file
+filters/grayscale.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/grayscale.cpp.s
+.PHONY : filters/grayscale.cpp.s
+
+filters/negative.o: filters/negative.cpp.o
+.PHONY : filters/negative.o
+
+# target to build an object file
+filters/negative.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/negative.cpp.o
+.PHONY : filters/negative.cpp.o
+
+filters/negative.i: filters/negative.cpp.i
+.PHONY : filters/negative.i
+
+# target to preprocess a source file
+filters/negative.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/negative.cpp.i
+.PHONY : filters/negative.cpp.i
+
+filters/negative.s: filters/negative.cpp.s
+.PHONY : filters/negative.s
+
+# target to generate assembly for a file
+filters/negative.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/negative.cpp.s
+.PHONY : filters/negative.cpp.s
+
+filters/sharp.o: filters/sharp.cpp.o
+.PHONY : filters/sharp.o
+
+# target to build an object file
+filters/sharp.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/sharp.cpp.o
+.PHONY : filters/sharp.cpp.o
+
+filters/sharp.i: filters/sharp.cpp.i
+.PHONY : filters/sharp.i
+
+# target to preprocess a source file
+filters/sharp.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/sharp.cpp.i
+.PHONY : filters/sharp.cpp.i
+
+filters/sharp.s: filters/sharp.cpp.s
+.PHONY : filters/sharp.s
+
+# target to generate assembly for a file
+filters/sharp.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/filters/sharp.cpp.s
+.PHONY : filters/sharp.cpp.s
 
 image.o: image.cpp.o
 .PHONY : image.o
@@ -225,6 +345,30 @@ image_processor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/image_processor.cpp.s
 .PHONY : image_processor.cpp.s
 
+parser.o: parser.cpp.o
+.PHONY : parser.o
+
+# target to build an object file
+parser.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/parser.cpp.o
+.PHONY : parser.cpp.o
+
+parser.i: parser.cpp.i
+.PHONY : parser.i
+
+# target to preprocess a source file
+parser.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/parser.cpp.i
+.PHONY : parser.cpp.i
+
+parser.s: parser.cpp.s
+.PHONY : parser.s
+
+# target to generate assembly for a file
+parser.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/parser.cpp.s
+.PHONY : parser.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -237,15 +381,33 @@ help:
 	@echo "... color.o"
 	@echo "... color.i"
 	@echo "... color.s"
-	@echo "... filters.o"
-	@echo "... filters.i"
-	@echo "... filters.s"
+	@echo "... filters/crop.o"
+	@echo "... filters/crop.i"
+	@echo "... filters/crop.s"
+	@echo "... filters/edge.o"
+	@echo "... filters/edge.i"
+	@echo "... filters/edge.s"
+	@echo "... filters/gauss.o"
+	@echo "... filters/gauss.i"
+	@echo "... filters/gauss.s"
+	@echo "... filters/grayscale.o"
+	@echo "... filters/grayscale.i"
+	@echo "... filters/grayscale.s"
+	@echo "... filters/negative.o"
+	@echo "... filters/negative.i"
+	@echo "... filters/negative.s"
+	@echo "... filters/sharp.o"
+	@echo "... filters/sharp.i"
+	@echo "... filters/sharp.s"
 	@echo "... image.o"
 	@echo "... image.i"
 	@echo "... image.s"
 	@echo "... image_processor.o"
 	@echo "... image_processor.i"
 	@echo "... image_processor.s"
+	@echo "... parser.o"
+	@echo "... parser.i"
+	@echo "... parser.s"
 .PHONY : help
 
 

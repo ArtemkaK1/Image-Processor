@@ -92,22 +92,9 @@ CMakeFiles/image_processor.dir/image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/image.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/image.cpp -o CMakeFiles/image_processor.dir/image.cpp.s
 
-CMakeFiles/image_processor.dir/filters.cpp.o: CMakeFiles/image_processor.dir/flags.make
-CMakeFiles/image_processor.dir/filters.cpp.o: ../filters.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/image_processor.dir/filters.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/filters.cpp.o -c /Users/artemiy/CLionProjects/image_processor/filters.cpp
-
-CMakeFiles/image_processor.dir/filters.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/filters.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemiy/CLionProjects/image_processor/filters.cpp > CMakeFiles/image_processor.dir/filters.cpp.i
-
-CMakeFiles/image_processor.dir/filters.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/filters.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/filters.cpp -o CMakeFiles/image_processor.dir/filters.cpp.s
-
 CMakeFiles/image_processor.dir/color.cpp.o: CMakeFiles/image_processor.dir/flags.make
 CMakeFiles/image_processor.dir/color.cpp.o: ../color.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/image_processor.dir/color.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/image_processor.dir/color.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/color.cpp.o -c /Users/artemiy/CLionProjects/image_processor/color.cpp
 
 CMakeFiles/image_processor.dir/color.cpp.i: cmake_force
@@ -118,23 +105,126 @@ CMakeFiles/image_processor.dir/color.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/color.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/color.cpp -o CMakeFiles/image_processor.dir/color.cpp.s
 
+CMakeFiles/image_processor.dir/parser.cpp.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/parser.cpp.o: ../parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/image_processor.dir/parser.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/parser.cpp.o -c /Users/artemiy/CLionProjects/image_processor/parser.cpp
+
+CMakeFiles/image_processor.dir/parser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/parser.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemiy/CLionProjects/image_processor/parser.cpp > CMakeFiles/image_processor.dir/parser.cpp.i
+
+CMakeFiles/image_processor.dir/parser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/parser.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/parser.cpp -o CMakeFiles/image_processor.dir/parser.cpp.s
+
+CMakeFiles/image_processor.dir/filters/crop.cpp.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/filters/crop.cpp.o: ../filters/crop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/image_processor.dir/filters/crop.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/filters/crop.cpp.o -c /Users/artemiy/CLionProjects/image_processor/filters/crop.cpp
+
+CMakeFiles/image_processor.dir/filters/crop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/filters/crop.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemiy/CLionProjects/image_processor/filters/crop.cpp > CMakeFiles/image_processor.dir/filters/crop.cpp.i
+
+CMakeFiles/image_processor.dir/filters/crop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/filters/crop.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/filters/crop.cpp -o CMakeFiles/image_processor.dir/filters/crop.cpp.s
+
+CMakeFiles/image_processor.dir/filters/edge.cpp.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/filters/edge.cpp.o: ../filters/edge.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/image_processor.dir/filters/edge.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/filters/edge.cpp.o -c /Users/artemiy/CLionProjects/image_processor/filters/edge.cpp
+
+CMakeFiles/image_processor.dir/filters/edge.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/filters/edge.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemiy/CLionProjects/image_processor/filters/edge.cpp > CMakeFiles/image_processor.dir/filters/edge.cpp.i
+
+CMakeFiles/image_processor.dir/filters/edge.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/filters/edge.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/filters/edge.cpp -o CMakeFiles/image_processor.dir/filters/edge.cpp.s
+
+CMakeFiles/image_processor.dir/filters/gauss.cpp.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/filters/gauss.cpp.o: ../filters/gauss.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/image_processor.dir/filters/gauss.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/filters/gauss.cpp.o -c /Users/artemiy/CLionProjects/image_processor/filters/gauss.cpp
+
+CMakeFiles/image_processor.dir/filters/gauss.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/filters/gauss.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemiy/CLionProjects/image_processor/filters/gauss.cpp > CMakeFiles/image_processor.dir/filters/gauss.cpp.i
+
+CMakeFiles/image_processor.dir/filters/gauss.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/filters/gauss.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/filters/gauss.cpp -o CMakeFiles/image_processor.dir/filters/gauss.cpp.s
+
+CMakeFiles/image_processor.dir/filters/grayscale.cpp.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/filters/grayscale.cpp.o: ../filters/grayscale.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/image_processor.dir/filters/grayscale.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/filters/grayscale.cpp.o -c /Users/artemiy/CLionProjects/image_processor/filters/grayscale.cpp
+
+CMakeFiles/image_processor.dir/filters/grayscale.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/filters/grayscale.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemiy/CLionProjects/image_processor/filters/grayscale.cpp > CMakeFiles/image_processor.dir/filters/grayscale.cpp.i
+
+CMakeFiles/image_processor.dir/filters/grayscale.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/filters/grayscale.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/filters/grayscale.cpp -o CMakeFiles/image_processor.dir/filters/grayscale.cpp.s
+
+CMakeFiles/image_processor.dir/filters/negative.cpp.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/filters/negative.cpp.o: ../filters/negative.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/image_processor.dir/filters/negative.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/filters/negative.cpp.o -c /Users/artemiy/CLionProjects/image_processor/filters/negative.cpp
+
+CMakeFiles/image_processor.dir/filters/negative.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/filters/negative.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemiy/CLionProjects/image_processor/filters/negative.cpp > CMakeFiles/image_processor.dir/filters/negative.cpp.i
+
+CMakeFiles/image_processor.dir/filters/negative.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/filters/negative.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/filters/negative.cpp -o CMakeFiles/image_processor.dir/filters/negative.cpp.s
+
+CMakeFiles/image_processor.dir/filters/sharp.cpp.o: CMakeFiles/image_processor.dir/flags.make
+CMakeFiles/image_processor.dir/filters/sharp.cpp.o: ../filters/sharp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/image_processor.dir/filters/sharp.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/image_processor.dir/filters/sharp.cpp.o -c /Users/artemiy/CLionProjects/image_processor/filters/sharp.cpp
+
+CMakeFiles/image_processor.dir/filters/sharp.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image_processor.dir/filters/sharp.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/artemiy/CLionProjects/image_processor/filters/sharp.cpp > CMakeFiles/image_processor.dir/filters/sharp.cpp.i
+
+CMakeFiles/image_processor.dir/filters/sharp.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image_processor.dir/filters/sharp.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/artemiy/CLionProjects/image_processor/filters/sharp.cpp -o CMakeFiles/image_processor.dir/filters/sharp.cpp.s
+
 # Object files for target image_processor
 image_processor_OBJECTS = \
 "CMakeFiles/image_processor.dir/image_processor.cpp.o" \
 "CMakeFiles/image_processor.dir/image.cpp.o" \
-"CMakeFiles/image_processor.dir/filters.cpp.o" \
-"CMakeFiles/image_processor.dir/color.cpp.o"
+"CMakeFiles/image_processor.dir/color.cpp.o" \
+"CMakeFiles/image_processor.dir/parser.cpp.o" \
+"CMakeFiles/image_processor.dir/filters/crop.cpp.o" \
+"CMakeFiles/image_processor.dir/filters/edge.cpp.o" \
+"CMakeFiles/image_processor.dir/filters/gauss.cpp.o" \
+"CMakeFiles/image_processor.dir/filters/grayscale.cpp.o" \
+"CMakeFiles/image_processor.dir/filters/negative.cpp.o" \
+"CMakeFiles/image_processor.dir/filters/sharp.cpp.o"
 
 # External object files for target image_processor
 image_processor_EXTERNAL_OBJECTS =
 
 image_processor: CMakeFiles/image_processor.dir/image_processor.cpp.o
 image_processor: CMakeFiles/image_processor.dir/image.cpp.o
-image_processor: CMakeFiles/image_processor.dir/filters.cpp.o
 image_processor: CMakeFiles/image_processor.dir/color.cpp.o
+image_processor: CMakeFiles/image_processor.dir/parser.cpp.o
+image_processor: CMakeFiles/image_processor.dir/filters/crop.cpp.o
+image_processor: CMakeFiles/image_processor.dir/filters/edge.cpp.o
+image_processor: CMakeFiles/image_processor.dir/filters/gauss.cpp.o
+image_processor: CMakeFiles/image_processor.dir/filters/grayscale.cpp.o
+image_processor: CMakeFiles/image_processor.dir/filters/negative.cpp.o
+image_processor: CMakeFiles/image_processor.dir/filters/sharp.cpp.o
 image_processor: CMakeFiles/image_processor.dir/build.make
 image_processor: CMakeFiles/image_processor.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable image_processor"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable image_processor"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/image_processor.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

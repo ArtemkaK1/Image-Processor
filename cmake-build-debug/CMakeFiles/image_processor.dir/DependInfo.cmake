@@ -9,9 +9,15 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/artemiy/CLionProjects/image_processor/color.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/color.cpp.o"
-  "/Users/artemiy/CLionProjects/image_processor/filters.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/filters.cpp.o"
+  "/Users/artemiy/CLionProjects/image_processor/filters/crop.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/filters/crop.cpp.o"
+  "/Users/artemiy/CLionProjects/image_processor/filters/edge.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/filters/edge.cpp.o"
+  "/Users/artemiy/CLionProjects/image_processor/filters/gauss.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/filters/gauss.cpp.o"
+  "/Users/artemiy/CLionProjects/image_processor/filters/grayscale.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/filters/grayscale.cpp.o"
+  "/Users/artemiy/CLionProjects/image_processor/filters/negative.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/filters/negative.cpp.o"
+  "/Users/artemiy/CLionProjects/image_processor/filters/sharp.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/filters/sharp.cpp.o"
   "/Users/artemiy/CLionProjects/image_processor/image.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/image.cpp.o"
   "/Users/artemiy/CLionProjects/image_processor/image_processor.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/image_processor.cpp.o"
+  "/Users/artemiy/CLionProjects/image_processor/parser.cpp" "/Users/artemiy/CLionProjects/image_processor/cmake-build-debug/CMakeFiles/image_processor.dir/parser.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

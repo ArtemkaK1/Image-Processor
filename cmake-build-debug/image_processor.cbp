@@ -86,10 +86,40 @@
 		<Unit filename="/Users/artemiy/CLionProjects/image_processor/color.h">
 			<Option target="image_processor"/>
 		</Unit>
-		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters.cpp">
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters/crop.cpp">
 			<Option target="image_processor"/>
 		</Unit>
-		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters.h">
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters/crop.h">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters/edge.cpp">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters/edge.h">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters/gauss.cpp">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters/gauss.h">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters/grayscale.cpp">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters/grayscale.h">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters/negative.cpp">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters/negative.h">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters/sharp.cpp">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/filters/sharp.h">
 			<Option target="image_processor"/>
 		</Unit>
 		<Unit filename="/Users/artemiy/CLionProjects/image_processor/image.cpp">
@@ -99,6 +129,12 @@
 			<Option target="image_processor"/>
 		</Unit>
 		<Unit filename="/Users/artemiy/CLionProjects/image_processor/image_processor.cpp">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/parser.cpp">
+			<Option target="image_processor"/>
+		</Unit>
+		<Unit filename="/Users/artemiy/CLionProjects/image_processor/parser.h">
 			<Option target="image_processor"/>
 		</Unit>
 		<Unit filename="/Users/artemiy/CLionProjects/image_processor/CMakeLists.txt">

@@ -4,18 +4,62 @@
 CMakeFiles/image_processor.dir/color.cpp.o
  /Users/artemiy/CLionProjects/image_processor/color.cpp
  /Users/artemiy/CLionProjects/image_processor/color.h
-CMakeFiles/image_processor.dir/filters.cpp.o
+CMakeFiles/image_processor.dir/filters/crop.cpp.o
+ /Users/artemiy/CLionProjects/image_processor/color.h
  /Users/artemiy/CLionProjects/image_processor/filter_construction.h
- /Users/artemiy/CLionProjects/image_processor/filters.cpp
- /Users/artemiy/CLionProjects/image_processor/filters.h
+ /Users/artemiy/CLionProjects/image_processor/filters/crop.cpp
+ /Users/artemiy/CLionProjects/image_processor/filters/crop.h
+ /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
+ /Users/artemiy/CLionProjects/image_processor/image.h
+CMakeFiles/image_processor.dir/filters/edge.cpp.o
+ /Users/artemiy/CLionProjects/image_processor/color.h
+ /Users/artemiy/CLionProjects/image_processor/filter_construction.h
+ /Users/artemiy/CLionProjects/image_processor/filters/edge.cpp
+ /Users/artemiy/CLionProjects/image_processor/filters/edge.h
+ /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
+ /Users/artemiy/CLionProjects/image_processor/filters/grayscale.h
+ /Users/artemiy/CLionProjects/image_processor/image.h
+CMakeFiles/image_processor.dir/filters/gauss.cpp.o
+ /Users/artemiy/CLionProjects/image_processor/filters/gauss.cpp
+CMakeFiles/image_processor.dir/filters/grayscale.cpp.o
+ /Users/artemiy/CLionProjects/image_processor/color.h
+ /Users/artemiy/CLionProjects/image_processor/filter_construction.h
+ /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
+ /Users/artemiy/CLionProjects/image_processor/filters/grayscale.cpp
+ /Users/artemiy/CLionProjects/image_processor/filters/grayscale.h
+ /Users/artemiy/CLionProjects/image_processor/image.h
+CMakeFiles/image_processor.dir/filters/negative.cpp.o
+ /Users/artemiy/CLionProjects/image_processor/color.h
+ /Users/artemiy/CLionProjects/image_processor/filter_construction.h
+ /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
+ /Users/artemiy/CLionProjects/image_processor/filters/negative.cpp
+ /Users/artemiy/CLionProjects/image_processor/filters/negative.h
+ /Users/artemiy/CLionProjects/image_processor/image.h
+CMakeFiles/image_processor.dir/filters/sharp.cpp.o
+ /Users/artemiy/CLionProjects/image_processor/color.h
+ /Users/artemiy/CLionProjects/image_processor/filter_construction.h
+ /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
+ /Users/artemiy/CLionProjects/image_processor/filters/sharp.cpp
+ /Users/artemiy/CLionProjects/image_processor/filters/sharp.h
  /Users/artemiy/CLionProjects/image_processor/image.h
 CMakeFiles/image_processor.dir/image.cpp.o
  /Users/artemiy/CLionProjects/image_processor/color.h
  /Users/artemiy/CLionProjects/image_processor/image.cpp
  /Users/artemiy/CLionProjects/image_processor/image.h
 CMakeFiles/image_processor.dir/image_processor.cpp.o
+ /Users/artemiy/CLionProjects/image_processor/color.h
  /Users/artemiy/CLionProjects/image_processor/filter_construction.h
- /Users/artemiy/CLionProjects/image_processor/filters.h
+ /Users/artemiy/CLionProjects/image_processor/filters/crop.h
+ /Users/artemiy/CLionProjects/image_processor/filters/edge.h
+ /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
+ /Users/artemiy/CLionProjects/image_processor/filters/gauss.h
+ /Users/artemiy/CLionProjects/image_processor/filters/grayscale.h
+ /Users/artemiy/CLionProjects/image_processor/filters/negative.h
+ /Users/artemiy/CLionProjects/image_processor/filters/sharp.h
  /Users/artemiy/CLionProjects/image_processor/image.h
  /Users/artemiy/CLionProjects/image_processor/image_processor.cpp
+ /Users/artemiy/CLionProjects/image_processor/parser.h
+CMakeFiles/image_processor.dir/parser.cpp.o
+ /Users/artemiy/CLionProjects/image_processor/filter_construction.h
+ /Users/artemiy/CLionProjects/image_processor/parser.cpp
  /Users/artemiy/CLionProjects/image_processor/parser.h
