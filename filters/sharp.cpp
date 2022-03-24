@@ -1,18 +1,17 @@
 #include "sharp.h"
 
-#include <iostream>
-
-Image Sharpening::Apply(Image &image, std::vector<std::string> params) {
+Image Sharpening::Apply(Image &image) {
     Image result = Image(image.GetWidth(), image.GetHeight());
-    int w = image.GetWidth(), h = image.GetHeight();
-    for (int y = 0; y < h; ++y) {
-        for (int x = 0; x < w; ++x) {
+    std::vector<std::pair<int, int>> steps_around = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
+    size_t w = image.GetWidth(), h = image.GetHeight();
+    for (size_t y = 0; y < h; ++y) {
+        for (size_t x = 0; x < w; ++x) {
             int new_red = 0;
             int new_green = 0;
             int new_blue = 0;
-            for (auto item : STEPS_AROUND) {
-                int new_x = std::max(0, std::min(h - 1, x + item.first));
-                int new_y = std::max(0, std::min(w - 1, y + item.second));
+            for (auto [step_x, step_y] : steps_around) {
+                int new_x = std::clamp(static_cast<int>(x + step_x), 0, static_cast<int>(h - 1));;
+                int new_y = std::clamp(static_cast<int>(y + step_y), 0, static_cast<int>(w - 1));
                 new_red += (-1) * image.GetColor(new_x, new_y).r;
                 new_green += (-1) * image.GetColor(new_x, new_y).g;
                 new_blue += (-1) * image.GetColor(new_x, new_y).b;

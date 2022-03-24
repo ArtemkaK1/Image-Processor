@@ -4,5 +4,5 @@
 
 class Negative : public FilterProtocol {
 public:
-    Image Apply(Image& image, std::vector<std::string> params = {}) override;
+    Image Apply(Image& image) override;
 };

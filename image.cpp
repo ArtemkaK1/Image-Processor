@@ -5,29 +5,29 @@
 
 
 namespace {
-    const int FILE_HEADER_SIZE = 14;
-    const int INFORMATION_HEADER_SIZE = 40;
+    const size_t FILE_HEADER_SIZE = 14;
+    const size_t INFORMATION_HEADER_SIZE = 40;
 }
 
-Image::Image(int width, int height) :  width_(width), height_(height), colors_(std::vector<Color>(width * height)) {}
+Image::Image(size_t width, size_t height) :  width_(width), height_(height), colors_(std::vector<Color>(width * height)) {}
 
-Color Image::GetColor(int x, int y) const {
+Color Image::GetColor(size_t x, size_t y) const {
     return colors_[y * width_ + x];
 }
 
-Color& Image::GetColor(int x, int y) {
+Color& Image::GetColor(size_t x, size_t y) {
     return colors_[y * width_ + x];
 }
 
-int Image::GetWidth() const {
+size_t Image::GetWidth() const {
     return width_;
 }
 
-int Image::GetHeight() const {
+size_t Image::GetHeight() const {
     return height_;
 }
 
-void Image::read(const char *path) {
+void Image::Read(const char *path) {
     std::ifstream f;
     f.open(path, std::ios::in | std::ios::binary);
 
@@ -48,16 +48,16 @@ void Image::read(const char *path) {
         return;
     }
 
-    int file_size = file_header[2] + (file_header[3] << 8) + (file_header[4] << 16) + (file_header[5] << 24);
+    size_t file_size = file_header[2] + (file_header[3] << 8) + (file_header[4] << 16) + (file_header[5] << 24);
 
     width_ = information_header[4] + (information_header[5] << 8) + (information_header[6] << 16) + (information_header[7] << 24);
     height_ = information_header[8] + (information_header[9] << 8) + (information_header[10] << 16) + (information_header[11] << 24);
 
     colors_.resize(width_ * height_);
-    const int padding_amount = ((4 - (width_ * 3) % 4) % 4);
+    const size_t padding_amount = ((4 - (width_ * 3) % 4) % 4);
 
-    for (int y = 0; y < height_; ++y) {
-        for (int x = 0; x < width_; ++x) {
+    for (size_t y = 0; y < height_; ++y) {
+        for (size_t x = 0; x < width_; ++x) {
             uint8_t color[3];
             f.read(reinterpret_cast<char*>(color), 3);
 
@@ -69,7 +69,7 @@ void Image::read(const char *path) {
     }
     f.close();
 
-    std::cout << "File can be read" << std::endl;
+    std::cout << "File can be Read" << std::endl;
 }
 
 void Image::Export(const char *path) const {
@@ -82,9 +82,9 @@ void Image::Export(const char *path) const {
     }
 
     uint8_t bmp_pad[3] = {0, 0, 0};
-    const int padding_amount = ((4 - (width_ * 3) % 4) % 4);
+    const size_t padding_amount = ((4 - (width_ * 3) % 4) % 4);
 
-    const int file_size = FILE_HEADER_SIZE + INFORMATION_HEADER_SIZE + width_ * height_ * 3 + padding_amount * height_;
+    const size_t file_size = FILE_HEADER_SIZE + INFORMATION_HEADER_SIZE + width_ * height_ * 3 + padding_amount * height_;
 
     uint8_t file_header[FILE_HEADER_SIZE];
 
@@ -145,8 +145,8 @@ void Image::Export(const char *path) const {
     f.write(reinterpret_cast<char*>(file_header), FILE_HEADER_SIZE);
     f.write(reinterpret_cast<char*>(information_header), INFORMATION_HEADER_SIZE);
 
-    for (int y = 0; y < height_; ++y) {
-        for (int x = 0; x < width_; ++x) {
+    for (size_t y = 0; y < height_; ++y) {
+        for (size_t x = 0; x < width_; ++x) {
             uint8_t r = static_cast<uint8_t>(GetColor(x, y).r);
             uint8_t g = static_cast<uint8_t>(GetColor(x, y).g);
             uint8_t b = static_cast<uint8_t>(GetColor(x, y).b);

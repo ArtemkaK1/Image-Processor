@@ -5,5 +5,8 @@
 
 class EdgeDetection : public GrayscaleFilter {
 public:
-    Image Apply(Image& image, std::vector<std::string> params = {}) override;
+    explicit EdgeDetection(int threshold);
+    Image Apply(Image& image) override;
+private:
+    int threshold_;
 };

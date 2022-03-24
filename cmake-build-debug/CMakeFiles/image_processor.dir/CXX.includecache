@@ -61,8 +61,6 @@ filter_protocol.h
 /Users/artemiy/CLionProjects/image_processor/filters/sharp.cpp
 sharp.h
 /Users/artemiy/CLionProjects/image_processor/filters/sharp.h
-iostream
--
 
 /Users/artemiy/CLionProjects/image_processor/filters/sharp.h
 filter_protocol.h

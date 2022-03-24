@@ -6,20 +6,20 @@
 
 class Image {
 public:
-    Image(int width, int height);
+    Image(size_t width, size_t height);
 
-    Color GetColor(int x, int y) const;
-    Color& GetColor(int x, int y);
+    Color GetColor(size_t x, size_t y) const;
+    Color& GetColor(size_t x, size_t y);
 
-    int GetWidth() const;
-    int GetHeight() const;
+    size_t GetWidth() const;
+    size_t GetHeight() const;
 
-    void read(const char* path);
+    void Read(const char* path);
 
     void Export(const char* path) const;
 
 private:
-    int width_;
-    int height_;
+    size_t width_;
+    size_t height_;
     std::vector<Color> colors_;
 };
