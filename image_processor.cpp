@@ -7,49 +7,52 @@
 #include "image.h"
 #include "parser.h"
 
+#include <fstream>
+#include <filesystem>
 #include <iostream>
-
+#include <string>
 
 void printHelp();
 
 int main(int argc, char** argv) {
-    Image image1(0, 0);
-    Image image2(0, 0);
-    Image image3(0, 0);
-    Image image4(0, 0);
-    Image image5(0, 0);
-    Image image6(0, 0);
 
-    GrayscaleFilter grayscaleFilter;
-    image1.read("/Users/artemiy/CLionProjects/image_processor/examples/example.bmp");
-    image1 = grayscaleFilter.Apply(image1);
-    image1.Export("/Users/artemiy/CLionProjects/image_processor/examples/copy1.bmp");
 
-    Negative negative;
-    image2.read("/Users/artemiy/CLionProjects/image_processor/examples/example.bmp");
-    image2 = negative.Apply(image2);
-    image2.Export("/Users/artemiy/CLionProjects/image_processor/examples/copy2.bmp");
+    if (argc < 3) {
+        std::cout << "Wrong arguments" << std::endl;
+        return 0;
+    }
 
-    Crop crop;
-    image3.read("/Users/artemiy/CLionProjects/image_processor/examples/example.bmp");
-    image3 = crop.Apply(image3, {"1000", "1000"});
-    image3.Export("/Users/artemiy/CLionProjects/image_processor/examples/copy3.bmp");
+    if(!std::filesystem::exists(argv[1])) {
+        std::cout << "File does not exist" << std::endl;
+        return 0;
+    }
 
-    Sharpening sharpening;
-    image4.read("/Users/artemiy/CLionProjects/image_processor/examples/example.bmp");
-    image4 = sharpening.Apply(image4);
-    image4.Export("/Users/artemiy/CLionProjects/image_processor/examples/copy4.bmp");
+    Image image(0, 0);
+    image.read(argv[1]);
 
-    EdgeDetection edgeDetection;
-    image5.read("/Users/artemiy/CLionProjects/image_processor/examples/example.bmp");
-    image5 = edgeDetection.Apply(image5, {"4"});
-    image5.Export("/Users/artemiy/CLionProjects/image_processor/examples/copy5.bmp");
-
-    GaussBlur gaussBlur;
-    image6.read("/Users/artemiy/CLionProjects/image_processor/examples/example.bmp");
-    gaussBlur.Apply(image6, {"5"});
-    image6.Export("/Users/artemiy/CLionProjects/image_processor/examples/copy6.bmp");
-    return 0;
+    for (size_t i = 3; i < static_cast<size_t>(argc); ++i) {
+        std::string filter = argv[i];
+        if (filter == "-crop") {
+            Crop crop;
+            image = crop.Apply(image, {argv[i + 1], argv[i + 2]});
+        } else if (filter == "-gs") {
+            GrayscaleFilter grayscaleFilter;
+            image = grayscaleFilter.Apply(image);
+        } else if (filter == "-neg") {
+            Negative negative;
+            image = negative.Apply(image);
+        } else if (filter == "-sharp") {
+            Sharpening sharpening;
+            image = sharpening.Apply(image);
+        } else if (filter == "-edge") {
+            EdgeDetection edge;
+            image = edge.Apply(image, {argv[i + 1]});
+        } else if (filter == "-blur") {
+            GaussBlur blur;
+            image = blur.Apply(image, {argv[i + 1]});
+        }
+    }
+    image.Export(argv[2]);
 }
 
 void printHelp() {
