@@ -131,12 +131,6 @@
 		<Unit filename="/Users/artemiy/CLionProjects/image_processor/image_processor.cpp">
 			<Option target="image_processor"/>
 		</Unit>
-		<Unit filename="/Users/artemiy/CLionProjects/image_processor/parser.cpp">
-			<Option target="image_processor"/>
-		</Unit>
-		<Unit filename="/Users/artemiy/CLionProjects/image_processor/parser.h">
-			<Option target="image_processor"/>
-		</Unit>
 		<Unit filename="/Users/artemiy/CLionProjects/image_processor/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

@@ -1,7 +1,8 @@
 #pragma once
 
-#include "../filter_construction.h"
 #include "../image.h"
+
+#include <string>
 
 static const std::vector<std::pair<int, int>> STEPS_AROUND = {{-1, 0}, {0, -1}, {1, 0}, {0, 1}};
 

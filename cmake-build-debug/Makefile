@@ -345,30 +345,6 @@ image_processor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/image_processor.cpp.s
 .PHONY : image_processor.cpp.s
 
-parser.o: parser.cpp.o
-.PHONY : parser.o
-
-# target to build an object file
-parser.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/parser.cpp.o
-.PHONY : parser.cpp.o
-
-parser.i: parser.cpp.i
-.PHONY : parser.i
-
-# target to preprocess a source file
-parser.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/parser.cpp.i
-.PHONY : parser.cpp.i
-
-parser.s: parser.cpp.s
-.PHONY : parser.s
-
-# target to generate assembly for a file
-parser.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/image_processor.dir/build.make CMakeFiles/image_processor.dir/parser.cpp.s
-.PHONY : parser.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -405,9 +381,6 @@ help:
 	@echo "... image_processor.o"
 	@echo "... image_processor.i"
 	@echo "... image_processor.s"
-	@echo "... parser.o"
-	@echo "... parser.i"
-	@echo "... parser.s"
 .PHONY : help
 
 

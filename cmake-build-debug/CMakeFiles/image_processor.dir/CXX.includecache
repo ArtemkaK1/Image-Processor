@@ -8,15 +8,17 @@
 
 /Users/artemiy/CLionProjects/image_processor/color.h
 
-/Users/artemiy/CLionProjects/image_processor/filter_construction.h
-string
--
-vector
--
+/Users/artemiy/CLionProjects/image_processor/filters/crop.cpp
+crop.h
+/Users/artemiy/CLionProjects/image_processor/filters/crop.h
 
 /Users/artemiy/CLionProjects/image_processor/filters/crop.h
 filter_protocol.h
 /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
+
+/Users/artemiy/CLionProjects/image_processor/filters/edge.cpp
+edge.h
+/Users/artemiy/CLionProjects/image_processor/filters/edge.h
 
 /Users/artemiy/CLionProjects/image_processor/filters/edge.h
 filter_protocol.h
@@ -25,22 +27,42 @@ grayscale.h
 /Users/artemiy/CLionProjects/image_processor/filters/grayscale.h
 
 /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
-../filter_construction.h
-/Users/artemiy/CLionProjects/image_processor/filter_construction.h
 ../image.h
 /Users/artemiy/CLionProjects/image_processor/image.h
+string
+-
+
+/Users/artemiy/CLionProjects/image_processor/filters/gauss.cpp
+gauss.h
+/Users/artemiy/CLionProjects/image_processor/filters/gauss.h
+cmath
+-
 
 /Users/artemiy/CLionProjects/image_processor/filters/gauss.h
 filter_protocol.h
 /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
 
+/Users/artemiy/CLionProjects/image_processor/filters/grayscale.cpp
+grayscale.h
+/Users/artemiy/CLionProjects/image_processor/filters/grayscale.h
+
 /Users/artemiy/CLionProjects/image_processor/filters/grayscale.h
 filter_protocol.h
 /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
 
+/Users/artemiy/CLionProjects/image_processor/filters/negative.cpp
+negative.h
+/Users/artemiy/CLionProjects/image_processor/filters/negative.h
+
 /Users/artemiy/CLionProjects/image_processor/filters/negative.h
 filter_protocol.h
 /Users/artemiy/CLionProjects/image_processor/filters/filter_protocol.h
+
+/Users/artemiy/CLionProjects/image_processor/filters/sharp.cpp
+sharp.h
+/Users/artemiy/CLionProjects/image_processor/filters/sharp.h
+iostream
+-
 
 /Users/artemiy/CLionProjects/image_processor/filters/sharp.h
 filter_protocol.h
@@ -67,8 +89,6 @@ filters/sharp.h
 /Users/artemiy/CLionProjects/image_processor/filters/sharp.h
 image.h
 /Users/artemiy/CLionProjects/image_processor/image.h
-parser.h
-/Users/artemiy/CLionProjects/image_processor/parser.h
 fstream
 -
 filesystem
@@ -76,15 +96,5 @@ filesystem
 iostream
 -
 string
--
-
-/Users/artemiy/CLionProjects/image_processor/parser.h
-filter_construction.h
-/Users/artemiy/CLionProjects/image_processor/filter_construction.h
-iostream
--
-string_view
--
-vector
 -
 

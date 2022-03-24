@@ -5,7 +5,6 @@
 #include "filters/negative.h"
 #include "filters/sharp.h"
 #include "image.h"
-#include "parser.h"
 
 #include <fstream>
 #include <filesystem>

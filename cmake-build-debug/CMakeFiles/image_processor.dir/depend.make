@@ -6,14 +6,12 @@ CMakeFiles/image_processor.dir/color.cpp.o: \
  ../color.h
 CMakeFiles/image_processor.dir/filters/crop.cpp.o: \
  ../color.h \
- ../filter_construction.h \
  ../filters/crop.cpp \
  ../filters/crop.h \
  ../filters/filter_protocol.h \
  ../image.h
 CMakeFiles/image_processor.dir/filters/edge.cpp.o: \
  ../color.h \
- ../filter_construction.h \
  ../filters/edge.cpp \
  ../filters/edge.h \
  ../filters/filter_protocol.h \
@@ -21,28 +19,24 @@ CMakeFiles/image_processor.dir/filters/edge.cpp.o: \
  ../image.h
 CMakeFiles/image_processor.dir/filters/gauss.cpp.o: \
  ../color.h \
- ../filter_construction.h \
  ../filters/filter_protocol.h \
  ../filters/gauss.cpp \
  ../filters/gauss.h \
  ../image.h
 CMakeFiles/image_processor.dir/filters/grayscale.cpp.o: \
  ../color.h \
- ../filter_construction.h \
  ../filters/filter_protocol.h \
  ../filters/grayscale.cpp \
  ../filters/grayscale.h \
  ../image.h
 CMakeFiles/image_processor.dir/filters/negative.cpp.o: \
  ../color.h \
- ../filter_construction.h \
  ../filters/filter_protocol.h \
  ../filters/negative.cpp \
  ../filters/negative.h \
  ../image.h
 CMakeFiles/image_processor.dir/filters/sharp.cpp.o: \
  ../color.h \
- ../filter_construction.h \
  ../filters/filter_protocol.h \
  ../filters/sharp.cpp \
  ../filters/sharp.h \
@@ -53,7 +47,6 @@ CMakeFiles/image_processor.dir/image.cpp.o: \
  ../image.h
 CMakeFiles/image_processor.dir/image_processor.cpp.o: \
  ../color.h \
- ../filter_construction.h \
  ../filters/crop.h \
  ../filters/edge.h \
  ../filters/filter_protocol.h \
@@ -62,9 +55,4 @@ CMakeFiles/image_processor.dir/image_processor.cpp.o: \
  ../filters/negative.h \
  ../filters/sharp.h \
  ../image.h \
- ../image_processor.cpp \
- ../parser.h
-CMakeFiles/image_processor.dir/parser.cpp.o: \
- ../filter_construction.h \
- ../parser.cpp \
- ../parser.h
+ ../image_processor.cpp
